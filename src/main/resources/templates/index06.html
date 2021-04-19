@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>index01</title>
+</head>
+<body>
+   <!--时间-->
+    <span th:text="${#dates.format(date,'yyyy年MM月dd日')}"></span>
+
+    <!--数字-->
+    <span th:text="${#numbers.formatDecimal(price, 1, 3)}"></span>
+
+    <!--字符串处理-->
+    <span th:text="${str}"></span><br>
+    <span th:text="${#strings.isEmpty(str)}">123</span>
+</body>
+</html>
